@@ -1,0 +1,68 @@
+.business{
+    display: flex;
+    justify-content: center;
+    background-color: #0D084D;
+    color: white;
+    .container{
+        width: 90%;
+        padding: 60px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 20px;
+
+            .sub-title{
+                font-size: 26px;
+            }
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            button{
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                width: fit-content;
+                padding: 10px 20px;
+                margin-top: 30px;
+                background-color: #1DBF73;
+                color: white;
+                font-weight: 500;
+                font-size: 15px;
+            }
+        }
+
+        .right{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
