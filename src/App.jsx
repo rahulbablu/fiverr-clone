@@ -22,6 +22,15 @@ const Layout = () => {
   );
 };
 
+const MessageLayout = () => {
+  return (
+    <div className="app">
+      <Navbar />
+      <Message />
+    </div>
+  )
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -55,12 +64,12 @@ const router = createBrowserRouter([
         path: '/messages',
         element: <Messages />
       },
-      {
-        path: '/message/:id',
-        element: <Message />
-      },
     ]
   },
+  {
+    path: '/message/:id',
+    element: <MessageLayout />
+  }
 ]);
 
 function App() {

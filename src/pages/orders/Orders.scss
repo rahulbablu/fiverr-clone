@@ -1,0 +1,40 @@
+.orders{
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+
+        h2{
+            padding: 10px;
+        }
+
+        table{
+            width: 100%;
+
+            tr{
+                height: 50px;
+
+                td{
+                    font-size: 14px;
+                    text-align: center;
+                    .img{
+                        width: 50px;
+                        height: 25px;
+                        object-fit: contain;
+                    }
+
+                    .message{
+                        width: 25px;
+                        height: 25px;
+                        cursor: pointer;
+                    }
+                }
+
+                &:nth-child(even){
+                    background-color: #c4e7d7;
+                }
+            }
+            
+        }
+    }
+}

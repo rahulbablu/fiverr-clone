@@ -1,0 +1,47 @@
+.messages{
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+
+        h2{
+            padding: 10px;
+        }
+
+        table{
+            width: 100%;
+
+            .active{
+                background-color: #c5eeda;
+            }
+
+            tr{
+                height: 90px;
+
+                td{
+                    font-size: 14px;
+                    text-align: center;
+                    padding: 0px 10px;
+
+                    &:first-child{
+                        font-weight: 500;
+                    }
+
+                    &:nth-child(2), &:nth-child(3){
+                        color: gray;
+                    }
+
+                    &:nth-child(2){
+                        padding: 0;
+                    }
+
+                    button{
+                        padding: 5px 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.message{
+    .container{
+        height: 80vh;
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .breadcrumbs{
+            font-size: 14px;
+            font-weight: 500;
+            color: gray;
+        }
+
+        .messages{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 500px;
+            overflow-y: scroll;
+    
+            .item{
+                display: flex;
+                gap: 10px;
+
+                &.owner{
+                    flex-direction: row-reverse;
+
+                    p{
+                        background-color: #1dbf73;
+                        border-radius: 10px 0px 10px 10px;
+                        color: white;
+                    }
+                }
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+
+                p{
+                    width: 60%;
+                    padding: 10px;
+                    background-color: lightgray;
+                    border-radius: 0px 10px 10px 10px;
+                }
+            }
+        }
+
+        hr{
+            height: 0;
+            border: 0.5px solid lightgray;
+        }
+
+        .write{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            textarea{
+                width: 100%;
+                padding: 15px;
+                outline: none;
+                border: 1px solid lightgray;
+                border-radius: 10px;
+
+            
+            }
+
+            button{
+                width: 150px;
+                padding: 10px 0px;
+                outline: none;
+                color: white;
+                background-color: #1dbf73;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+    }
+}
